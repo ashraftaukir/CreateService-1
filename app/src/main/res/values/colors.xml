@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="ggs_back_gradient_top">#08ACB9</color>
+    <color name="ggs_back_gradient_bottom">#250E38</color>
+    <color name="ggs_toolbar_text_color">#ffffff</color>
+    <color name="ggs_toolbar_next_text_color">#80ffffff</color>
+    <color name="ggs_service_create_header_text_color">#1b1b1b</color>
+    <color name="ggs_service_category_background_color">#7ACBD2</color>
+    <color name="ggs_service_category_text_color">#ffffff</color>
+    <color name="ggs_edittext_hint_color">#8008ACB9</color>
+    <color name="ggs_edittext_text_color">#333333</color>
+
+
+
+    <color name="ggs_location_text_color">#8F8E94</color>
+
+
+    <color name="next_button_back_color">#08ACB9</color>
+    <color name="next_button_text_color">#ffffff</color>
+    <color name="ggs_divider_background_color">#e6e6e6</color>
+    <color name="currency_value_text_color">#8F8E94</color>
+    <color name="rate_per_value_color">#000000</color>
+
+
+</resources>

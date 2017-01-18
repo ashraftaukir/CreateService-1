@@ -1,0 +1,343 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ggs_create_service_back">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.gg_user.createservice.ServiceDetailsGgs">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center"
+            android:padding="@dimen/ggs_back_button_padding">
+
+            <ImageView
+                android:id="@+id/ggs_back_button"
+                android:layout_width="@dimen/ggs_back_button_height_width"
+                android:layout_height="@dimen/ggs_back_button_height_width"
+                android:src="@drawable/ggs_arrow_left_icon" />
+
+            <TextView
+                android:id="@+id/ggs_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/ggs_back_button"
+                android:gravity="center"
+                android:paddingLeft="@dimen/ggs_toolbar_text_left_padding"
+                android:text="@string/ggs_create_service"
+                android:textColor="@color/ggs_toolbar_text_color"
+                android:textSize="@dimen/ggs_toolbar_text_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/ggs_toolbar_next"
+                android:textColor="@color/ggs_toolbar_next_text_color"
+                android:textSize="@dimen/ggs_toolbar_next_text_size" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ggs_service_create_card_view_margin_left_right"
+            android:layout_marginRight="@dimen/ggs_service_create_card_view_margin_left_right"
+            app:cardCornerRadius="@dimen/ggs_service_create_card_view_corner_radius"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/ggs_service_create_header_padding_bottom"
+                    android:paddingLeft="@dimen/ggs_service_create_header_padding_left"
+                    android:paddingTop="@dimen/ggs_service_create_header_padding_top"
+                    android:text="@string/ggs_service_create_header"
+                    android:textColor="@color/ggs_service_create_header_text_color"
+                    android:textSize="@dimen/ggs_service_create_header_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ggs_service_category_background_color"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ggs_service_create_header_padding_left"
+                    android:text="@string/ggs_service_create_category_text"
+                    android:paddingTop="@dimen/ggs_service_category_padding_top"
+                    android:paddingBottom="@dimen/ggs_service_category_padding_bottom"
+                    android:textColor="@color/ggs_service_category_text_color"
+                    android:textSize="@dimen/ggs_service_create_category_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/ggs_service_create_header_padding_bottom"
+                    android:paddingLeft="@dimen/ggs_service_create_header_padding_left"
+                    android:paddingTop="@dimen/ggs_service_create_header_padding_top"
+                    android:text="@string/ggs_service_name"
+                    android:textColor="@color/ggs_service_create_header_text_color"
+                    android:textSize="@dimen/ggs_service_create_header_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ggs_service_create_header_padding_left"
+                    android:layout_marginRight="@dimen/ggs_service_create_header_padding_left"
+                    android:hint="@string/ggs_service_name_hint"
+                    android:textColor="@color/ggs_edittext_text_color"
+                    android:textColorHint="@color/ggs_edittext_hint_color"
+                    android:textSize="@dimen/ggs_service_create_header_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/ggs_service_create_header_padding_bottom"
+                    android:paddingLeft="@dimen/ggs_service_create_header_padding_left"
+                    android:paddingTop="@dimen/ggs_service_create_header_padding_top"
+                    android:text="@string/ggs_service_description"
+                    android:textColor="@color/ggs_service_create_header_text_color"
+                    android:textSize="@dimen/ggs_service_create_header_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ggs_service_create_header_padding_left"
+                    android:layout_marginRight="@dimen/ggs_service_create_header_padding_left"
+                    android:layout_marginBottom="@dimen/ggs_service_edittext_margin_bottom"
+                    android:hint="@string/ggs_service_descr_hint"
+                    android:textColor="@color/ggs_edittext_text_color"
+                    android:textColorHint="@color/ggs_edittext_hint_color"
+                    android:textSize="@dimen/ggs_service_create_header_text_size" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ggs_service_create_card_view_margin_left_right"
+            android:layout_marginRight="@dimen/ggs_service_create_card_view_margin_left_right"
+            android:layout_marginTop="@dimen/ggs_service_create_card_view_margin_gap"
+            app:cardCornerRadius="@dimen/ggs_service_create_card_view_corner_radius">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/ggs_service_create_header_padding_left"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/ggs_upload_media_padding_bottom"
+                    android:paddingTop="@dimen/ggs_upload_media_padding_bottom"
+                    android:text="@string/ggs_upload_media_Text"
+                    android:textColor="@color/ggs_service_create_header_text_color"
+                    android:textSize="@dimen/ggs_upload_media_text_size" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/upload_media_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/ggs_upload_media_recycler_padding_bottom"
+                    android:paddingTop="@dimen/ggs_upload_media_recycler_padding_top">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ggs_service_create_card_view_margin_left_right"
+            android:layout_marginRight="@dimen/ggs_service_create_card_view_margin_left_right"
+            android:layout_marginTop="@dimen/ggs_service_create_card_view_margin_gap"
+            app:cardCornerRadius="@dimen/ggs_service_create_card_view_corner_radius">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/ggs_service_create_header_padding_left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/ggs_currency"
+                        android:textColor="@color/ggs_service_create_header_text_color"
+                        android:textSize="@dimen/currency_text_size"
+                        android:textStyle="bold"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/arrow_icon"
+                        android:layout_width="@dimen/arrow_width"
+                        android:layout_height="@dimen/arrow_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ggs_arrow_icon_ggs" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/arrow_icon"
+                        android:paddingRight="@dimen/value_text_padding_right"
+                        android:text="@string/ggs_currency_text_demo"
+                        android:textColor="@color/currency_value_text_color"
+                        android:textSize="@dimen/currency_value_text_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ggs_divider_background_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/ggs_service_create_header_padding_left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/ggs_rate"
+                        android:textColor="@color/ggs_service_create_header_text_color"
+                        android:textSize="@dimen/currency_text_size"
+                        android:textStyle="bold"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/arrow_icon_1"
+                        android:layout_width="@dimen/arrow_width"
+                        android:layout_height="@dimen/arrow_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ggs_arrow_icon_ggs" />
+
+                    <TextView
+                        android:id="@+id/rate_per_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/arrow_icon_1"
+                        android:paddingRight="@dimen/value_text_padding_right"
+                        android:text="@string/ggs_rate_per_value_demo_text"
+
+                        android:textColor="@color/rate_per_value_color"
+                        android:textSize="@dimen/currency_value_text_size" />
+
+                    <TextView
+                        android:id="@+id/rate_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/rate_per_value"
+                        android:paddingRight="@dimen/value_text_padding_right"
+                        android:text="@string/ggs_rate_demo_value"
+                        android:textColor="@color/currency_value_text_color"
+                        android:textSize="@dimen/currency_value_text_size" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ggs_divider_background_color" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/ggs_service_create_header_padding_left"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/ggs_location_text"
+                        android:textColor="@color/ggs_service_create_header_text_color"
+                        android:textSize="@dimen/currency_text_size"
+                        android:textStyle="bold"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/arrow_icon_2"
+                        android:layout_width="@dimen/arrow_width"
+                        android:layout_height="@dimen/arrow_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ggs_arrow_icon_ggs" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/arrow_icon_2"
+                        android:paddingRight="@dimen/value_text_padding_right"
+                        android:text="@string/ggs_location_text"
+                        android:textColor="@color/currency_value_text_color"
+                        android:textSize="@dimen/currency_value_text_size" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ggs_service_create_card_view_margin_left_right"
+            android:background="@drawable/ggs_next_button_background_drawable"
+            android:gravity="center_horizontal"
+            android:text="@string/ggs_toolbar_next"
+            android:textColor="@color/next_button_text_color"
+            android:textSize="@dimen/change_button_text_size" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

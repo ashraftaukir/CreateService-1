@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CreateService</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ggs_create_service">Create Service</string>
+    <string name="ggs_toolbar_next">Next</string>
+    <string name="ggs_service_create_header">Which service are you providing?</string>
+    <string name="ggs_service_create_category_text">Dummy</string>
+    <string name="ggs_service_name">Service Title</string>
+    <string name="ggs_service_description">Service Description</string>
+    <string name="ggs_service_name_hint">Your service title here </string>
+    <string name="ggs_service_descr_hint">Your service description here </string>
+
+
+    <string name="ggs_upload_media_Text">Upload media</string>
+
+
+    <string name="ggs_location_text">Location</string>
+    <string name="ggs_location_change_text">Change</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="ggs_currency">Currency</string>
+    <string name="ggs_rate">Rate</string>
+    <string name="ggs_currency_text_demo">USD</string>
+    <string name="ggs_rate_per_value_demo_text">/ Hour</string>
+    <string name="ggs_rate_demo_value">$50.00</string>
+
+
+</resources>
